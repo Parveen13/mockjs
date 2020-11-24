@@ -2,15 +2,25 @@
 <html>
 <body>
 
-<h2>JavaScript Numbers</h2>
+<button>Start machine</button>
+<p>The machine is stopped.</p>
 
-<p>A number divided by a numeric string becomes a number:</p>
+const btn = document.querySelector('button');
+const txt = document.querySelector('p');
 
-<p id="demo"></p>
+btn.addEventListener('click', updateBtn);
 
-<script>
-document.getElementById("demo").innerHTML = 100 / "1";
-</script>
+function updateBtn() {
+  if (btn.textContent === 'Start machine') {
+    btn.textContent = 'Stop machine';
+    txt.textContent = 'The machine has started!';
+  } else {
+    btn.textContent = 'Start machine';
+    txt.textContent = 'The machine is stopped.';
+  }
+}
+
+
 
 </body>
 </html>
