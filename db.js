@@ -1,26 +1,23 @@
-<!DOCTYPE html>
 <html>
-<body>
+<head><title>Sum of two numbers</title></head>
 
-<button>Start machine</button>
-<p>The machine is stopped.</p>
-
-const btn = document.querySelector('button');
-const txt = document.querySelector('p');
-
-btn.addEventListener('click', updateBtn);
-
-function updateBtn() {
-  if (btn.textContent === 'Start machine') {
-    btn.textContent = 'Stop machine';
-    txt.textContent = 'The machine has started!';
-  } else {
-    btn.textContent = 'Start machine';
-    txt.textContent = 'The machine is stopped.';
+  <script>
+  function myFunction() {
+      var x, y,sum;
+      x = parseFloat(document.getElementById('firstnumber').value);
+      y = parseFloat(document.getElementById('secondnumber').value);
+      sum = x + y;
+      document.getElementById('answer').value = sum;
   }
-}
+  </script>
 
 
+<body>
+  <h1>My First Heading</h1>
+  First number: <br> <input type="number" id="firstnumber"><br>
+  Second number:<br> <input type="number" id="secondnumber"><br>
+  <button type="button" onclick="myFunction()">Submit</button><br>
+  Answer: <input type="number" id="answer">
 
 </body>
 </html>
