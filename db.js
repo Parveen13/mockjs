@@ -1,23 +1,22 @@
 <html>
-<head><title>Sum of two numbers</title></head>
-
-  <script>
-  function myFunction() {
-      var x, y,sum;
-      x = parseFloat(document.getElementById('firstnumber').value);
-      y = parseFloat(document.getElementById('secondnumber').value);
-      sum = x + y;
-      document.getElementById('answer').value = sum;
-  }
-  </script>
-
-
+	<head>
+		<title>Add two integer numbers using JavaScript.</title>
+		<script type="text/javascript">
+			function addTwoNumbers(textBox1, textBox2){
+				var x=document.getElementById(textBox1).value;
+				var y=document.getElementById(textBox2).value;
+				var sum=0;
+				sum=Number(x)+Number(y);
+				alert("SUM is: " + sum);
+			</script>
+	</head>
 <body>
-  <h1>My First Heading</h1>
-  First number: <br> <input type="number" id="firstnumber"><br>
-  Second number:<br> <input type="number" id="secondnumber"><br>
-  <button type="button" onclick="myFunction()">Submit</button><br>
-  Answer: <input type="number" id="answer">
-
+	<h1>Add two integer numbers using JavaScript.</h1>
+	<b>Enter first Number: </b><br>
+	<input type="text" id="textIn1"/><br>
+	<b>Enter second Number: </b><br>
+	<input type="text" id="textIn2"/><br><br>
+	<input type="button" id="btnSum" value="Calculate SUM" onClick="addTwoNumbers('textIn1','textIn2')"/>
 </body>
+
 </html>
