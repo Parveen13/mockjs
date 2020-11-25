@@ -3,9 +3,9 @@
 { "id":1, "title": "Post 1", "description": "this is description 1" },
 ],
 "comments": [
-{"id": 1, "body": "comment 1", "postId":1 },
+{ "id": 1, "body": "comment 1", "postId":1 },
 ],
-"profile": 
-  { "name": "profile 1" },
-
+"profile": {
+  "name": "profile 1" 
+  } 
 }
